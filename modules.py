@@ -45,3 +45,11 @@ print(ten_years.days)
 
 print(answers)
 print(get_answer("Как дела?", answers))
+
+
+def get_constellation(planet):
+   myplanet = ephem.planet(datetime.date.today())
+   #myplanet = ephem.Mars(datetime.date.today()) 
+   print(ephem.constellation(myplanet))
+
+get_constellation("Mars")
